@@ -1,0 +1,147 @@
+/*전체 체크박스*/
+
+input#agree_check_all {
+    display: none;
+}
+
+input#agree_check_all + label{
+    cursor:pointer;
+}
+  
+input#agree_check_all + label > span{
+    vertical-align: middle;
+    padding-left: 5px;
+}
+  
+  /* label:before에 체크하기 전 상태 CSS */
+input#agree_check_all + label:before{
+    content:"";
+    display:inline-block;
+    width:18px;
+    height:18px;
+    border:2px solid black;
+    border-radius: 9999px;
+    vertical-align:middle;
+}
+    
+  /* label:before에 체크 된 상태 CSS */  
+input#agree_check_all:checked + label:before{
+    content:"";
+    background-size: 11px;
+    /* background-image: url(../img/check-circle.png); */
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+/*1번째 체크박스*/
+input#agree_check_used {
+    display: none;
+}
+
+input#agree_check_used + label{
+    cursor:pointer;
+}
+  
+input#agree_check_used + label > span{
+    vertical-align: middle;
+    padding-left: 5px;
+}
+  
+  /* label:before에 체크하기 전 상태 CSS */
+input#agree_check_used + label:before{
+    margin-left: 4px;
+    content:"";
+    display:inline-block;
+    width:14px;
+    height:14px;
+    border:2px solid black;
+    border-radius: 9999px;
+    vertical-align:middle;
+}
+    
+  /* label:before에 체크 된 상태 CSS */  
+input#agree_check_used:checked + label:before{
+    content:"";
+    background-size: 11px;
+    /* background-image: url(../img/check-circle.png); */
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+
+
+/*2번째 체크박스*/
+input#agree_check_info {
+    display: none;
+}
+
+input#agree_check_info + label{
+    cursor:pointer;
+}
+  
+input#agree_check_info + label > span{
+    vertical-align: middle;
+    padding-left: 5px;
+}
+  
+  /* label:before에 체크하기 전 상태 CSS */
+input#agree_check_info + label:before{
+    margin-left: 4px;
+    content:"";
+    display:inline-block;
+    width:14px;
+    height:14px;
+    border:2px solid black;
+    border-radius: 9999px;
+    vertical-align:middle;
+}
+    
+  /* label:before에 체크 된 상태 CSS */  
+input#agree_check_info:checked + label:before{
+    content:"";
+    background-size: 11px;
+    /* background-image: url(../img/check-circle.png); */
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+
+
+/*3번째 체크박스*/
+input#agree_check_marketing_receive {
+    display: none;
+}
+
+input#agree_check_marketing_receive + label{
+    cursor:pointer;
+}
+  
+input#agree_check_marketing_receive + label > span{
+    vertical-align: middle;
+    padding-left: 5px;
+}
+  
+  /* label:before에 체크하기 전 상태 CSS */
+input#agree_check_marketing_receive + label:before{
+    margin-left: 4px;
+    content:"";
+    display:inline-block;
+    width:14px;
+    height:14px;
+    border:2px solid black;
+    border-radius: 9999px;
+    vertical-align:middle;
+}
+    
+  /* label:before에 체크 된 상태 CSS */  
+input#agree_check_marketing_receive:checked + label:before{
+    content:"";
+    background-size: 11px;
+    /* background-image: url(../img/check-circle.png); */
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}

@@ -1,0 +1,64 @@
+.ck.ck-editor {
+  width: 770px;
+  /* max-width: 500px; */
+}
+.ck .ck-placeholder::before {
+  color: #5a5c62 !important;
+}
+/* 포커스 안했을 때 */
+.ck.ck-editor__main > .ck-editor__editable:not(.ck-focused) {
+  padding: 150px 40px 30px 30px;
+  font-size: 0.95rem;
+  color: #5a5c62;
+  line-height: 1.3rem;
+}
+/* 포커스 했을때 */
+.ck.ck-editor__editable.ck-focused:not(.ck.ck-editor__nested-editable) {
+  padding: 150px 40px 30px 30px;
+  /* border: 1px solid red; */
+  border: none;
+  z-index: 102;
+  box-shadow: none;
+  font-size: 0.95rem;
+  color: #5a5c62;
+  line-height: 1.3rem;
+}
+/* 툴바 border제거 */
+.ck.ck-toolbar {
+  border: none !important;
+  border-radius: 0 !important;
+  /* margin-bottom: 200px !important; */
+  border-bottom: 1px solid #f4f5f7 !important;
+}
+.ck.ck-sticky-panel__content {
+  border: none;
+}
+/* 툴바 간격 넓히기 */
+.ck.ck-toolbar > .ck-toolbar__items {
+  justify-content: space-around;
+}
+/* 툴바 구분자 색 지정 */
+.ck.ck-toolbar .ck.ck-toolbar__separator {
+  background: #f4f5f7 !important;
+}
+/* 입력창 border제거 */
+.ck.ck-editor__main > .ck-editor__editable:not(.ck-focused) {
+  border: none;
+  /* border-top: 1px solid #ccced1; */
+}
+/* 입력창 클릭시 css 안됨;;*/
+body .ck.ck-editor_editable.ck-focused:not {
+  border: 1px solid red !important;
+  /* border-top: 1px solid #ccced1; */
+  box-shadow: none !important;
+}
+
+.ck.ck-editor__editable:not(.ck-editor__nested-editable) {
+  min-height: 300px;
+  margin-bottom: 20px;
+  padding: 0;
+}
+.ck.ck-editor_editable.ck-focused {
+  border: none;
+  box-shadow: none;
+}
